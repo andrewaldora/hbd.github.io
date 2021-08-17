@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <h1><font face="Century Gothic"><font color="red">HAPPY BIRTHDAY CANTIK!!</h1></font><br>
+        <img src="https://media1.giphy.com/media/g5R9dok94mrIvplmZd/giphy.gif?cid=790b76110bffde4bcd2a8691791213daf7df5bb6af5822bf&rid=giphy.gif&ct=g">
+        <h2>
+           Selamat Ulang Tahun ya FUJA CRISTANTIA
+        </h2>           
+        <h3>Maaf nih kalau ga spesial-spesial banget</h3>          
+        <h4>Diterima ga nih kadonya?</h4>
+            <button id='btn_music' onclick='music()'>Play/Pause</button>
+        
+        <button id='btn_terima' onclick='alert("MAKASIH CANTIK")'>Terima Kado dari Andrew</button>&nbsp;
+        <button id='btn_gaditerima' onclick='gaditerima(this)' style='position:absolute'>Gaditerima</button>
+        <audio id='bgMusic' src='https://media1.vocaroo.com/mp3/1bBCL1KlJPQw' loop></audio>
+    </body>
+    <script>
+        function gaditerima(id){
+            var terima = document.getElementById('btn_terima');
+            var i = Math.floor(Math.random()*300)+1;
+            var j = Math.floor(Math.random()*100)+mau.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px';
+        }
+        var audioPlaying = false;
+        function music(){
+            var audio = document.getElementById("bgMusic");
+            if (!audioPlaying) audio.play();
+            else audio.pause();
+            audioPlaying = !audioPlaying;
+        }
+    </script>
+</html>
